@@ -1,0 +1,19 @@
+{
+  "name": "ads_server",
+  "version": "1.0.0",
+  "description": "build ads server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trunghieu321/ads_server.git"
+  },
+  "author": "trunghieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trunghieu321/ads_server/issues"
+  },
+  "homepage": "https://github.com/trunghieu321/ads_server#readme"
+}
