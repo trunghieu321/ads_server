@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#advertiser').change(function(){
+                var v = $(this).val();
+                $('#hinhQC').attr("src", "Ads/" + v);
+            });
+        });
+    </script>
+    <title>Advertider Admin</title>
+</head>
+<body>
+    <select name="advertiser" id="advertiser">
+        <option value="">----Vui lòng chọn quảng cáo----</option>
+        <% mangQC.forEach(function(qc){ %>
+            <option value="<%=qc.Hinh %>"><%=qc.Hinh %></option>
+        <% }); %>
+    </select>
+    <input type="button" id="btnGui" value="Send Ads"/>
+
+    <div>
+        <img id="hinhQC" src="" alt="">
+    </div>
+</body>
+</html>
